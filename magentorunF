@@ -1,0 +1,18 @@
+bin/magento setup:install \
+    --base-url=http://magento.local:8081 \
+    --db-host=sigma_magento_db \
+    --db-name=local_magento_db \
+    --db-user=local_agent \
+    --db-password=local_password \
+    --admin-firstname=Magento \
+    --admin-lastname=User \
+    --admin-email=stelmakh.yevhenii.i@gmail.com \
+    --admin-user=admin \
+    --admin-password=admin123 \
+    --language=en_US \
+    --currency=USD \
+    --timezone=America/Chicago \
+    --use-rewrites=1 \
+    --search-engine=elasticsearch7 \
+    --elasticsearch-host=sigma_magento_elasticsearch \
+    --elasticsearch-port=9200 
