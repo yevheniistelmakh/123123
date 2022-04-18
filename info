@@ -1,0 +1,18 @@
+first step is 
+git clone https://github.com/yevheniistelmakh/123123.git
+.
+then we run
+docker-compose up -d
+Next you need to go into the container with magenta and php
+docker exec -i id-conteiner /bin/sh
+the next step is to install the composer
+composer install
+next we run the magenta configuration file
+bin/magento setup:install \
+                          ...
+                          ...
+at the end you should see a link to the admin panel that you need to add to our
+domain.name:8081/admin_...
+.
+before going to the browser, you need to change the permission to a directory inside the php-magento container
+/var/www # chmod -R 777 html/*
